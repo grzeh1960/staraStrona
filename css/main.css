@@ -1,0 +1,695 @@
+ *{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+     font-family: Roboto;
+}
+html {
+    font-size: 10px;
+}
+#bg {
+    width:100%;
+    height:100%;
+}
+#bg1 {
+    position:relative;
+    width:100%;
+    height:100vh;
+    background: url(../img/tloOK.jpg) bottom no-repeat;
+    background-size:cover;
+    z-index:-3;
+    overflow: hidden;
+}
+#bg2{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    background: url(../img/horseSparFlip.png)bottom no-repeat;
+    background-size:cover;
+    z-index:-2;
+    overflow: hidden;
+}
+#slogan {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100vh;
+    /* z-index:-1 */
+}
+#slogan svg{
+    position:absolute;
+    width:30%;
+    left:20%;
+    transform:translateX(-50%);
+    top:22%;
+}
+.wrap {
+    position:relative;
+    width:100%;
+    background:#eeeeee;
+    font-size:1.8rem;
+}
+.content {
+    position:relative;
+    width:100%;
+    padding:40px;
+
+    font-size:1.5rem;
+    vertical-align: baseline;
+    overflow: hidden;
+
+}
+.content p{
+    font-size:2.5rem;
+    text-align: center;
+    width:100%;
+    overflow: hidden;
+    font-family:Montserrat;
+}
+
+/* stylowanie componentu */
+
+ .component{
+    padding: 20px;
+    text-align: center;
+
+}
+
+.component h1{
+    font-family:Roboto;
+    font-size: 3.1rem;
+    color:#532f28;
+    text-decoration:overline;
+}
+.component h2{
+    font-family:Roboto;
+    font-size:2.5rem;
+    color:#532f28;
+    text-decoration: underline
+}
+.component h3{
+    /* display:block; */
+    font-family: Roboto;
+    font-size: 2.5rem;
+    color:#532f28;
+
+}
+
+.component h4{
+    font-family:Roboto;
+    font-size: 2rem;
+    color:#532f28;
+
+}
+.component button{
+    margin:10px 15px;
+    padding:5px;
+}
+
+
+.component p{
+    font-family: Montserrat;
+    font-size:2rem;
+    text-align: center;
+
+}
+
+#startPage{
+    padding-bottom: 0;
+
+}
+.polaWyboru{
+    display:grid;
+    row-gap:40px;
+
+}
+
+#kamerowanie{
+    display:none;
+}
+#tools{
+    display:none;
+}
+#clips{
+    display:none;
+}
+#animacje{
+    display:none;
+}
+#wizualizacje{
+    display:none;
+
+}
+#book{
+    display:none;
+}
+
+
+#stopka{
+    background-color: #FFD700;
+    width:100%;
+    height:40px;
+    padding:0;
+    text-align: center;
+    display:flex;
+}
+#stopka p{
+    margin:auto;
+    font-size:12px;
+}
+.poleWyboru{
+    cursor:pointer;
+
+}
+.engine{
+
+    height:357px;
+    margin:80px auto 0px auto;
+}
+
+
+/* grafika componentu */
+
+.grafika{
+    background-size:cover;
+    background-position: center;
+
+    margin:10px auto;
+    animation: fadeIn 3s;
+    border-radius:20px;
+    cursor:pointer;
+    transition: all .5s ease;
+  
+
+}
+.grafika:hover {
+    transform:scale(110%);
+}
+@keyframes fadeIn {
+    from {opacity: 0; transform: scale(1.2) }
+    to   { opacity: 1;transform: scale(1)}
+}
+.grafikaKamerowanie{
+    background-image: url(../img/filmowanie/kameraGrafika.png);
+    width: 150px;
+    height:150px;
+
+}
+.grafikaAnimacje{
+    background-image: url(../img/portfolik.png);
+    width: 170px;
+    height:170px;
+}
+.grafikaOmnie{
+    background-image: url(../img/ja/grzehGrafika.png);
+    width: 200px;
+    height:200px;
+}
+.grafikaBookPromo{
+    background-image: url(../img/book/bookPromoOK.png);
+    width: 195px;
+    height:155px;
+}
+.grafikaBook{
+    background-image: url(../img/seriaWydOKgray.png);
+    width:170px;
+    height:170px;
+}
+
+.grafikaKontakt{
+    background-image: url(../img/kontakt.png);
+    width: 100px;
+    height:100px;
+}
+
+.grafikaWizualizacje {
+    background-image: url(../img/wizualizacje.png);
+    width: 150px;
+    height:150px;
+
+}
+
+.grafikaVerdiana {
+    background-image: url(../img/filmowanie/verdiana.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaKolendy {
+    background-image: url(../img/filmowanie/kolendy.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaPiesniPatr {
+    background-image: url(../img/filmowanie/pisniPatr.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaProductionCamera {
+    background-image: url(../img/filmowanie/productionCamera.png);
+    width: 300px;
+    height:208px;
+}
+.grafikaMicroCamera {
+    background-image: url(../img/filmowanie/microCamera02.png);
+    width: 300px;
+    height:250px;
+}
+.grafikaArchiw {
+    background-image: url(../img/filmowanie/archiwum.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaStr8 {
+    background-image: url(../img/filmowanie/str8.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaPiwo {
+    background-image: url(../img/filmowanie/piwoAnimatic.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaGlosLudzki {
+    background-image: url(../img/filmowanie/glosLudzki.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaCosi {
+    background-image: url(../img/filmowanie/cosiFanTutte.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaCosiZajawka {
+    background-image: url(../img/filmowanie/cosiZajawka.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaDonPasquale {
+    background-image: url(../img/filmowanie/donPascuale.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaIzaCzyta {
+    background-image: url(../img/filmowanie/izaCzyta.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaIzaNaWsi {
+    background-image: url(../img/filmowanie/izaNaWsi01.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaClipPromo {
+    background-image: url(../img/filmowanie/clipPromo.jpg);
+    width: 150px;
+    height:88px;
+}
+.grafikaGlosProba {
+    background-image: url(../img/filmowanie/glosLudzkiProba.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaGlosWywiady {
+    background-image: url(../img/filmowanie/glosLudzkiWywiady.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaGad {
+    background-image: url(../img/filmowanie/gad.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaPralka {
+    background-image: url(../img/filmowanie/frania.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaBookAnim2D{
+    background-image: url(../img/filmowanie/bookDrawAnim2.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaMuchaAnim{
+    background-image: url(../img/filmowanie/muchaAnimacja.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaJeje{
+    background-image: url(../img/filmowanie/jeje.jpg);
+    width: 300px;
+    height:176px;
+}
+.grafikaNaturaKultura{
+    background-image: url(../img/filmowanie/natura01a.jpg);
+    width: 300px;
+    height:176px;
+}
+
+
+
+
+
+nav {
+    background:#040b0d;
+    top:0;
+    width:100%;
+    height: 75px;
+    transition:all 0.5s;
+    position:relative;
+    z-index:1;
+}
+.mainNav{
+    position:absolute;
+    display: flex;
+    width:40%;
+    height:100%;
+    transform:translateX(-50%);
+    left:70%;
+    align-items: center;
+   justify-content: center;
+
+}
+.navIcon {
+    font-size: 30px;
+   margin:0 20px;
+   color:#fff;
+   cursor:pointer;
+   margin-left: 20px;
+}
+
+.closebtn{
+    font-size:2rem;
+}
+.fixed-nav nav {
+    position: fixed;
+}
+.bar {
+    position:absolute;
+    transform:translate(-50%,-50%);
+    left:90%;
+    top:50%;
+    margin-left:20px;
+    display:inline-block;
+    z-index:1;
+    cursor: pointer;
+}
+.media {
+    position:absolute;
+    transform:translate(-50%,-50%);
+    left:10%;
+    top:50%;
+    width:3rem;
+    height:3rem;
+    border: 1px solid #ffffff;
+    border-radius: 15%;
+}
+.media a{
+    display: flex;
+    font-size:2.5rem;
+    color:#ffffff;
+    padding:5px;
+}
+
+#main .bar {
+    color:#ffffff;
+    font-size:2rem;
+}
+.logo{
+    position:absolute;
+    display:flex;
+    left:5%;
+    top:15%;
+    cursor:pointer;
+}
+#logoG{
+    width:132px;
+    height:52px;
+}
+
+
+.overlay {
+    height:0%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:rgb(0,0,0,);
+    background-color: rgba(0,0,0, 0.85);
+    overflow-y: hidden;
+    transition: 0.5s;
+    z-index:2;
+}
+.overlay-content {
+    position:relative;
+    top:25%;
+    width:100%;
+    text-align:center;
+    margin-top:50px;
+}
+.overlay-content a {
+    padding:16px;
+    text-decoration: none;
+    font-size:8rem;
+    color:#bababa;
+    display:block;
+    transition: 0.3s;
+}
+.overlay a {
+    background-color: #2d2d2d;
+    letter-spacing: .1em;
+    text-shadow: -2px -2px 2px #111111, 2px 2px 1px #404040;
+    display:block;
+    text-decoration: none;
+    position: relative;
+    font-size:2rem;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left:50%;
+    transform:translateX(-50%);
+    font-size: 2rem;
+    color:#ffffff;
+}
+#element01{
+    position:absolute;
+    width:80%;
+    height:80px;
+    background-color: rgba(255,255,0,0.7);
+
+    transform:translate(-50%, -50%);
+    margin:20px auto;
+    left:-41%;
+    overflow: hidden;
+    transition-duration:1s;
+}
+.distance {
+    height:60px;
+}
+
+.selectWork button{
+    background-color: rgb(253, 236, 2);
+    margin:10px 5px;
+    border-radius: 5px;
+    border:none;
+    cursor:pointer;
+    -webkit-box-shadow: 0px 7px 8px -2px rgba(84,84,84,0.47); 
+    box-shadow: 0px 7px 8px -2px rgba(129, 129, 129, 0.47);
+    transition: all .7s ease;
+    
+
+}
+.selectWork button:hover {
+    transform:scale(105%);
+    font-weight: bold;
+
+}
+
+.block {
+    display: flex;
+	text-align: center;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.block h2{
+    margin:auto;
+}
+.galery {
+	box-sizing: border-box;
+    width: 100%;
+
+}
+.clipy{
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+img {
+    width: 200px;
+	box-shadow: 0px 3px 5px #777777;
+	border: 1px solid #646363;
+	opacity: 1;
+	margin: 10px 10px 10px 10px;
+	cursor: pointer;
+}
+.bookAll{
+    display:grid;
+    row-gap:40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.myBook img{
+    width: 300px;
+	box-shadow: 0px 3px 5px #777777;
+	border: 1px solid #646363;
+	opacity: 1;
+	margin: 10px 10px 10px 10px;
+	cursor: pointer;
+}
+#bookParametry p{
+    font-family:Roboto;
+    font-size: 1.5rem;
+    color:#532f28;
+}
+/* LIGHTBOX*/
+#lightBox {
+            max-width: 1336px;
+           position: fixed;
+			transform: translateX(-50%);
+			z-index: 1000;
+            left: 50%;
+            top:0;
+
+			background: rgba(1, 56, 72, 0.9);
+			width: 100vw;
+			height: 100vh;
+			background-size: cover;
+			display:none;
+
+
+        }
+#lightBoxInside {
+            position: absolute;
+			transform: translate(-50%,-50%);
+			left:50%;
+			top:45%;
+            width:90%;
+            height:90%;
+
+		}
+
+#imgInside {
+            box-sizing: border-box;
+            text-align: center;
+            height:96%;
+
+        }
+
+#lightBox #lightBoxInside #imgInside img {
+            width: 100%;
+            height: auto;
+			box-shadow: 0 0 0 0 #ffffff;
+
+			vertical-align: middle;
+			max-width: 100%;
+			max-height: 100%;
+			margin:auto;
+
+}
+#nav {
+     color: #ffffff;
+     font-size: 1.2em;
+	margin-top: 10px;
+     margin-bottom:10px;
+     width: 100%;
+     text-align: center;
+        }
+
+.fa-chevron-left {
+            float: left;
+	margin-left: 30px;
+        }
+
+.fa-chevron-right {
+    float: right;
+	margin-right: 30px;
+ }
+
+
+@keyframes checkboxShowAnim {
+    0%  { border-radius:50%; transform:translate(-50%, -50%) scale(0.2); }
+    50% { transform:translate(-50%, -50%) scale(1.2); }
+    100% { transform:translate(-50%, -50%) scale(1); }
+}
+@media(orientation: landscape){
+    .mainNav{
+        width:20%;
+    }
+    .overlay-content{
+        margin-top: 0px;
+    }
+    .overlay-content a{
+        padding:8px;
+    }
+
+}
+@media (min-width:768px){
+    .mainNav{
+        width:20%;
+    }
+    .overlay {
+        width:50%;
+    }
+}
+@media (min-width:1024px){
+    .polaWyboru{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .bookAll{
+        grid-template-columns: 1fr 1fr;
+
+        row-gap:0;
+    }
+    .myBook{
+        grid-area:1/2/3/3;
+    }
+
+     .mainNav{
+        width:15%;
+        left:90%;
+    }
+    .overlay {
+        width:35%;
+    }
+}
+
+@media (min-width:1336px){
+    .polaWyboru{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .bookAll{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .content {
+        width: 80%;
+        margin:auto;
+
+    }
+}
+
+
+
+

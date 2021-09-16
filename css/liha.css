@@ -1,0 +1,98 @@
+#liha{
+            position:absolute;
+            transform:translate(-50%, -50%);
+            left:-200px;
+            top:40%;
+            overflow: hidden;
+
+        }
+        #element3{
+            animation-name: el3Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes el3Translate {
+            0%{transform:translate(0,0)}
+            50%{transform:translate(2px, -5px)}
+            100%{transform:translate(0,0)}
+        }
+        #element4{
+            animation-name: el4Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes el4Translate {
+            0%{transform:translate(0,0)}
+            50%{transform:translate(6px, -12px)}
+            100%{transform:translate(0,0)}
+        }
+        #element5{
+            animation-name: el5Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes el5Translate {
+            0%{transform:translate(0,0)}
+            50%{transform:translate(9px, -18px)}
+            100%{transform:translate(0,0)}
+        }
+        #element6{
+            animation-name: el6Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes el6Translate {
+            0%{transform:translate(0,0)}
+            50%{transform:translate(11px, -14px)}
+            100%{transform:translate(0,0)}
+        }
+        #element7{
+            animation-name: el7Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes el7Translate {
+            0%{transform:translate(0,0)}
+            50%{transform:translate(14px, -8px)}
+            100%{transform:translate(0,0)}
+        }
+        #element8{
+            animation-name: el8Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes el8Translate {
+            0%{transform:translate(0,0)}
+            50%{transform:translate(17px, -2px)}
+            100%{transform:translate(0,0)}
+        }
+        #element9{
+            animation-name: el9Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes el9Translate {
+            0%{transform:translate(0,0)}
+            50%{transform:translate(18px, 0px)}
+            100%{transform:translate(0,0)}
+        }
+        #element10{
+            animation-name: el10Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes el10Translate {
+            0%{transform:translate(0,0)}
+            50%{transform:translate(18px, 0px)}
+            100%{transform:translate(0,0)}
+        }
+        #element11{
+            animation-name: el10Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        #element12{
+            animation-name: el10Translate;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }

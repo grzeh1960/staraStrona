@@ -1,0 +1,144 @@
+
+/*YellowGear*/
+        #gearYellow{
+            transform-origin: 62px 48px;
+
+            /* animation:gear01Rotate 4s linear infinite; */
+
+
+        }
+         @keyframes gear01Rotate {
+            0%{transform:rotate(0deg)}
+            100%{transform:rotate(360deg)}
+        }
+        .animate1{
+
+            animation:gear01Rotate 4s linear infinite;
+        }
+
+/*GreyGear*/
+        #gearGrey{
+            transform-origin:23px 76px;
+            /* animation:gear02Rotate 2s linear infinite; */
+
+        }
+         @keyframes gear02Rotate {
+            0%{transform:rotate(0deg)}
+            100%{transform:rotate(-360deg)}
+        }
+        .animate2{
+             animation:gear02Rotate 1s linear infinite;
+
+        }
+/*Tłok*/
+        /* #tlok{
+            transform-origin: 23px 19px;
+        } */
+        @keyframes tlokTransition {
+            0%{transform:translateY(0px)}
+            50%{transform:translateY(25px)}
+            100%{transform:translateY(0px)}
+        }
+        .animate3Tlok{
+            animation:tlokTransition 1s linear infinite;
+        }
+/*Korbowód*/
+        #korbowod{
+            transform-origin: 23px 30px;
+        }
+        @keyframes korbowodMotion {
+            0%{transform:rotate(0deg) translateY(-5px)}
+            25%{transform:rotate(20deg) translateY(15px)}
+            50%{transform:rotate(0deg) translateY(30px)}
+            75%{transform:rotate(-20deg) translateY(15px)}
+            100%{transform:rotate(0deg) translateY(-5px)}
+        }
+        .animate4Korbowod {
+             animation:korbowodMotion 1s linear infinite;
+        }
+
+/*Wahacz*/
+        #wahacz {
+            transform-origin: 62px 48px;
+        }
+        @keyframes wahaczRotate {
+            0%{transform:rotate(0deg)}
+            50%{transform:rotate(12deg)}
+            100%{transform:rotate(0deg)}
+        }
+        .animate5Wahacz {
+            animation:wahaczRotate .5s linear infinite;
+        }
+
+/*Wajha*/
+        #wajha {
+            transform-origin: 93px 93px;
+        }
+        @keyframes wajhaRotate{
+            0%{transform:rotate(0deg)}
+            50%{transform:rotate(5deg)}
+            100%{transform:rotate(0deg)}
+        }
+        .animate6Wajha {
+            animation:wajhaRotate .25s linear infinite;
+        }
+/*Sprążyna*/
+
+        @keyframes spDownMoving {
+            0%{transform:translateY(0px)}
+            50%{transform:translateY(-12px)}
+            100%{transform:translateY(0px)}
+        }
+        .animate7SpDown {
+            animation:spDownMoving 0.5s linear infinite;
+        }
+
+
+        @keyframes spEl1Moving{
+            0%{transform:translateY(0px)}
+            50%{transform:translateY(-9px)}
+            100%{transform:translateY(0px)}
+        }
+        .animate7SpEl1 {
+            animation:spEl1Moving 0.5s linear infinite;
+        }
+
+       @keyframes spEl2Moving {
+            0%{transform:translateY(0px)}
+            50%{transform:translateY(-6px)}
+            100%{transform:translateY(0px)}
+        }
+        .animate7SpEl2 {
+            animation:spEl2Moving 0.5s linear infinite;
+        }
+         @keyframes spEl3Moving {
+            0%{transform:translateY(0px)}
+            50%{transform:translateY(-3px)}
+            100%{transform:translateY(0px)}
+        }
+        .animate7SpEl3 {
+            animation:spEl3Moving 0.5s linear infinite;
+        }
+/*Wybuch*/
+        #wybuh{
+            transform-origin: 22px 0px;
+        }
+        @keyframes wybuhOpacity {
+            0%{display:block; opacity:1; transform:scale(2)}
+            10%{display:block; opacity:1; transform:scale(0.5)}
+            12%{display:none; opacity:0; transform:scale(0.1)}
+            90%{display:none; opacity:0;transform:scale(0.1)}
+
+            100%{display:block; opacity:1; transform:scale(1)}
+        }
+        .animate8Wybuh {
+            animation: wybuhOpacity 1s linear infinite;
+        }
+
+
+        #startEngine{
+            position:absolute;
+            transform:translate(-50%, -50%);
+            left:50%;
+            bottom:0;
+        }
